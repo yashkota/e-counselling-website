@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us</title>
+  <link rel="stylesheet" type="text/css" href="global.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <script>
+  function showDropdown() {
+    document.getElementById('courses-dropdown').style.display='block';
+  }
+  function hideDropdown() {
+    document.getElementById('courses-dropdown').style.display='none';
+  }
+
+  </script>
+</head>
+<body>
+  <header>
+  <nav id="navbar">
+    <ul>
+      <li><a class="navbar-active" href="contact.html">Contact Us</a></li>
+      <li><a class="dropdown-hover" href="courses.html" onmouseover="showDropdown()">Courses</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="loginform.html">Login</a></li>
+      <li><a id="home-logo" href="index.html"><img src="logo.jpg" width="60%" ></a></li>
+      <li id="navbar-logo"><a   href="index.html">CareerWiz</a></li>
+    </ul>
+    <div onmouseout="hideDropdown()" style="display:block" onmouseover="showDropdown()">
+    <ul id="courses-dropdown">
+      <li><a href="engg-courses.html">Engineering</a></li>
+      <li><a href="mgmt-courses.html">Management</a></li>
+      <li><a href="med-courses.html">Medicine</a></li>
+    </ul>
+    </div>
+  </nav>
+  </header>
+  <article>
+    <h1>About Us</h1>
+    <p>CareerWiz was created by Five first year students as their internet
+      programming project. </p>
+    <p class="profile">
+      <span class="profile-name">Yash Khanna</span>
+     Yash Khanna is pursuing B.Tech CSE in Lovely Professional University. He likes to explore new things in the way
+      he wants to have a website which helps students.He loves doing programming.
+    <p>
+    <p class="profile">
+      <span class="profile-name">Ankita</span>
+      Ankita is also pursuing her B.Tech CSE in Lovely Professional University.
+      </p>
+      <p class="profile">
+          <span class="profile-name">Nilesh</span>
+     Nilesh is also pursuing his B.Tech CSE in Lovely Professional University.
+     </p>
+     <p class="profile">
+     <span class="profile-name">Saurav Anand</span>
+      Saurav Anand is also pursuing his B.Tech CSE in Lovely Professional University.
+      </p>
+      <p class="profile">
+      <span class="profile-name">Akansha Nagpal</span>
+      Akansha Nagpal is also pursuing her B.Tech CSE in Lovely Professional University.
+    </p>
+  </article>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a class="no-border" href="about.html">About Us</a>
+      </ul>
+    </nav>
+    <p class="copyright">Copyright &copy; 2018 YASH KHANNA</p>
+  </footer>
+</body>
+
+</html>
