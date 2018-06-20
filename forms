@@ -1,0 +1,74 @@
+form label {
+  display:block;
+  width:40%;
+  text-align:right;
+  float: left;
+  padding-right: 1em;
+
+}
+form input {
+  width: 45%;
+  float: left;
+}
+form textarea {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+form p {
+  margin-right: 9%;
+  overflow: hidden;
+}
+p.button {
+  clear: both;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  width: 100%;
+
+}
+p.button button {
+  float: none;
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+}
+
+article.form-container {
+  margin: 1em 30%;
+  float:none;
+  width: auto;
+}
+
+button {
+  position: relative;
+  box-shadow: 1px 1px 3px lightslategray;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 0.7em;
+  font-weight: bold;
+  background-color:#0D55AC;
+  color: white;
+  padding:6px;
+  border-radius: 3px;
+  border: 3px solid #0D55AC;
+}
+
+button:hover {
+  color: #0D55AC;
+  background-color: #ECF1F7;
+  cursor:pointer;
+}
+button:active {
+  cursor:pointer;
+  top:3px;
+}
+
+/*error-box styles*/
+div#error-box {
+  display: none;
+  margin: 1em 30%;
+  padding: 1em;
+  background-color: #F4DDDD;
+  border-radius: 8px;
+  border: 3px dashed #DA4646;
+  transition: opacity 0.4s;
+}
