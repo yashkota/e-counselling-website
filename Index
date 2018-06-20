@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CareerWiz &mdash; Your Career Guide</title>
+  <link rel="stylesheet" type="text/css" href="global.css">
+  <script>
+    function showDropdown() {
+      document.getElementById('courses-dropdown').style.display='block';
+    }
+    function hideDropdown() {
+      document.getElementById('courses-dropdown').style.display='none';
+    }
+  </script>
+</head>
+<body>
+<header>
+<nav id="navbar">
+  <ul>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a class="dropdown-hover" href="courses.html" onmouseover="showDropdown()">Courses</a></li>
+    <li><a href="signup.html">Sign Up</a></li>
+    <li><a href="loginform.html">Login</a></li>
+    <li><a class="navbar-active" id="home-logo" href="index.html"><img src="logo.jpg" width="60%" ></a></li>
+    <li id="navbar-logo"><a   href="index.html">CareerWiz</a></li>
+  </ul>
+  <div onmouseout="hideDropdown()" style="display:block" onmouseover="showDropdown()">
+  <ul id="courses-dropdown">
+    <li><a href="engg-courses.html">Engineering</a></li>
+    <li><a href="mgmt-courses.html">Management</a></li>
+    <li><a href="med-courses.html">Medicine</a></li>
+  </ul>
+  </div>
+</nav>
+</header>
+<article>
+  <h1 class="logo">CareerWiz</h1>
+  <p>CareerWiz is the one-stop solution for all your career guidance needs.
+    Explore courses available after intermediate. You can get counselling from
+    experts regarding your career path and get the latest updates about
+    college admissions and related.
+  </p>
+  <p>Watch this video to know more:
+    <video src="Counselling.mp4" controls>
+    </video>
+  </p>
+  <h2>Choosing a Career</h2>
+  <p>So what are the factors to consider?<br />
+  Before you make a choice analyze what it is you would like to do.</p>
+  <ul>
+    <li><strong>Step 1:</strong> Assess your capability, interest and personality either yourself or by visiting a career-counselor.</li>
+    <li><strong>Step 2:</strong> Based on your interests make a list of careers keeping in mind your personality and abilities.</li>
+    <li><strong>Step 3:</strong> Explore all the careers in your list. Do a detailed research on the job profiles, requirements, prospects, how to develop your career.</li>
+    <li><strong>Step 4:</strong> Once you're done with the above, pick the one that suits you the most.</li>
+
+  </ul>
+</article>
+<article class="side">
+  <h2>Featured Article:</h2>
+  <img src="guidence.jpg" class="center-fit" alt="image depicting confusion in choosing career">
+  <p><a href="http://www.idreamcareer.com/blog/college-and-career-guidance">Benefits of College and Career Guidance</a><br />
+  We live in a highly competitive era where all our career choices and our efforts determine the quality of our life in future. The competition is increasing every day and has even engulfed the courses that were once called non-conventional. Some...</p>
+</article>
+<article class="side">
+  <h2>Featured Article:</h2>
+  <img src="schools.jpg" class="center-fit" alt="image depicting confusion in choosing career">
+  <p><a href="http://www.idreamcareer.com/blog/school-vs-coaching-institutes-India">Schools Vs Coaching Institutes in India</a><br />
+  A recent order by hon Supreme Court of India stated that entrance to medical and engineering colleges in India should not be taken just on an entrance exam score and weightage should be given to the school exam marks as well...</p>
+</article>
+<footer>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a class="no-border" href="about.html">About Us</a>
+    </ul>
+  </nav>
+  <p class="copyright">Copyright &copy; 2018 YASH KHANNA</p>
+</footer>
+</body>
+</html>
