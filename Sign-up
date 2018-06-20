@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register at CareerWiz </title>
+    <link rel="stylesheet"  type="text/css" href="global.css">
+    <link rel="stylesheet"  type="text/css" href="forms.css">
+    <style media="screen">
+    article {
+      margin-top: 3em !important;
+    }
+    footer {
+      margin-top: 100px;
+    }
+    </style>
+    <script>
+    function checkEmpty() {
+      var isOk = true;
+      var passMatch = true;
+      var first = document.getElementById('fname').value;
+      var last = document.getElementById('lname').value;
+      var em = document.getElementById('email').value;
+      var pwdag = document.getElementById('pwdagain').value;
+      var usrname = document.getElementById('uname').value;
+      var paswd = document.getElementById('pwd').value;
+      if(usrname === "") {
+        isOk = false;
+      }
+      if(paswd === "") {
+         isOk = false;
+      }
+      if(first === "") {
+         isOk = false;
+      }
+      if(last === "") {
+         isOk = false;
+      }
+      if(em === "") {
+         isOk = false;
+      }
+      if(pwdag === "") {
+        isOk = false;
+      }
+      if(pwdag !== paswd && pwdag !== "") {
+        isOk = false;
+        passMatch = false;
+      }
+      if(isOk) {
+        window.open('reg-success.html', '_self');
+      }
+      else {
+        var errbox = document.getElementById('error-box');
+        errbox.style.display = 'block';
+        errbox.style.marginBottom = '-2em';
+        if(!passMatch){
+          errtext = document.getElementById('errbox-text');
+          errtext.innerHTML = "Passwords do not match! ";
+        }
+      }
+    }
+    function showDropdown() {
+      document.getElementById('courses-dropdown').style.display='block';
+    }
+    function hideDropdown() {
+      document.getElementById('courses-dropdown').style.display='none';
+    }
+    </script>
+  </head>
+  <body>
+    <header>
+    <nav id="navbar">
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a class="dropdown-hover" href="courses.html" onmouseover="showDropdown()">Courses</a></li>
+        <li><a class="navbar-active" href="signup.html">Sign Up</a></li>
+        <li><a href="loginform.html">Login</a></li>
+        <li><a id="home-logo" href="index.html"><img src="logo.jpg" width="60%" ></a></li>
+        <li id="navbar-logo"><a   href="index.html">CareerWiz</a></li>
+      </ul>
+      <div onmouseout="hideDropdown()" style="display:block" onmouseover="showDropdown()">
+      <ul id="courses-dropdown">
+        <li><a href="engg-courses.html">Engineering</a></li>
+        <li><a href="mgmt-courses.html">Management</a></li>
+        <li><a href="med-courses.html">Medicine</a></li>
+      </ul>
+      </div>
+    </nav>
+    </header>
+  <div id="error-box">
+    <p id=errbox-text>Some required fields are empty<p>
+  </div>
+  <article class="form-container">
+    <h1>Registration</h1>
+    <form class="signup-form" action="" method="post">
+      <p><label for="fname">First Name: </label> <input id="fname" type="text" name="first-name" placeholder="Your first name ..."></p>
+      <p><label for="lname">Last Name: </label> <input id="lname" type="text" name="last-name" placeholder="Your last name ..."></p>
+      <p><label for="email">Email Address: </label>  <input id="email" type="email" name="email" placeholder="Your email..."></p>
+      <p><label for="uname">User Name: </label><input id="uname" type="text" name="username" placeholder="Your username ..."></label></p>
+      <p><label for="pwd">Password: </label><input id="pwd" type="password" name="password" placeholder="Your password ..."></p>
+      <p><label for="pwdagain">Confirm Password: </label><input id="pwdagain" type="password" name="password-check" placeholder="Retype your password ..."></p>
+      <p class="button"><button type="button" onclick="checkEmpty()" >Sign Up</button></p>
+    </form>
+  </article>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a class="no-border" href="about.html">About Us</a>
+      </ul>
+    </nav>
+    <p class="copyright">Copyright &copy; 2018 YASH KHANNA</p>
+  </footer>
+</body>
+</html>
