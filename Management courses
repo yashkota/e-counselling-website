@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Management Career</title>
+  <link rel="stylesheet"  type="text/css" href="global.css">
+  <script>
+  function showDropdown() {
+    document.getElementById('courses-dropdown').style.display='block';
+  }
+  function hideDropdown() {
+    document.getElementById('courses-dropdown').style.display='none';
+  }
+  </script>
+ </head>
+ <body>
+   <header>
+   <nav id="navbar">
+     <ul>
+       <li><a href="contact.html">Contact Us</a></li>
+       <li><a class="navbar-active" class="dropdown-hover" href="courses.html" onmouseover="showDropdown()">Courses</a></li>
+       <li><a href="signup.html">Sign Up</a></li>
+       <li><a href="loginform.html">Login</a></li>
+       <li><a id="home-logo" href="index.html"><img src="logo.jpg" width="60%" ></a></li>
+       <li id="navbar-logo"><a   href="index.html">CareerWiz</a></li>
+     </ul>
+     <div onmouseout="hideDropdown()" style="display:block" onmouseover="showDropdown()">
+     <ul id="courses-dropdown">
+      <li><a href="engg-courses.html">Engineering</a></li>
+       <li><a href="mgmt-courses.html">Management</a></li>
+       <li><a href="med-courses.html">Medicine</a></li>
+     </ul>
+     </div>
+   </nav>
+   </header>
+<article>
+  <h1>Business School</h1>
+   <video src="Management.mp4" controls poster="mgmtvid.png">
+
+   </video>
+   <h2>Why Choose Management?</h2>
+   <ul>
+    <li>The Indian job scene is thriving. And in the age of pre-placement offers setting in, the day has come when you can get a high paying job even before you step out of college.</li>
+    <li>Money control gives you a lowdown on the career options that'll pay you the best.</li>
+    <li>The most sought after career is MBA, one of the top-paying careers today. And if you're a student from an top institution such as the <strong>Indian Institutes of Management</strong>, easily expect Rs 7.5- 8lac per annum as a fresher.</li>
+    <li>The entry-level salary is expected to go up even more. Also salaries differ according to the industry. "Today, the finance sector offers huge sums and has crossed the earlier darling of MBAs - the FMCG sector.</li>
+    <li>Though salary matters but do not give more importance to compensation than your interest. Know your strengths and capability before deciding to work. Also, while the salary may not be attractive today but it could reach a new height tomorrow.</li>
+  </ul>
+</article>
+<article class="side">
+  <h2>Featured Article:</h2>
+  <img src="proposal.jpg" class="center-fit" alt="image depicting confusion in choosing career">
+  <p><a href="http://www.idreamcareer.com/blog/how-to-select-colleges">How to Select College</a><br>
+    Choosing a right college means choosing a correct place to live in for next 3 years or more. For some, leaving home is not an option and for others going hundred or thousand miles is too difficult.   There are many factors to consider when evaluating...
+  </p>
+</article>
+<article class="side">
+  <h2>Featured Article:</h2>
+  <img src="schools.jpg" class="center-fit" alt="image depicting confusion in choosing career">
+  <p><a href="http://www.idreamcareer.com/blog/school-vs-coaching-institutes-India">Schools Vs Coaching Institutes in India</a><br>
+  A recent order by hon Supreme Court of India stated that entrance to medical and engineering colleges in India should not be taken just on an entrance exam score and weightage should be given to the school exam marks as well...</p>
+</article>
+<footer>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a class="no-border" href="about.html">About Us</a>
+    </ul>
+  </nav>
+  <p class="copyright">Copyright &copy; 2018 YASH KHANNA</p>
+</footer>
+ </body>
+</html>
