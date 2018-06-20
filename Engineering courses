@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Engineering Courses</title>
+  <link rel="stylesheet" type="text/css" href="global.css">
+  <script>
+  function showDropdown() {
+    document.getElementById('courses-dropdown').style.display='block';
+  }
+  function hideDropdown() {
+    document.getElementById('courses-dropdown').style.display='none';
+  }
+  </script>
+ </head>
+ <body>
+   <header>
+   <nav id="navbar">
+     <ul>
+       <li><a href="contact.html">Contact Us</a></li>
+       <li><a class="navbar-active"  href="courses.html" onmouseover="showDropdown()">Courses</a></li>
+       <li><a href="signup.html">Sign Up</a></li>
+       <li><a href="loginform.html">Login</a></li>
+       <li><a id="home-logo" href="index.html" ><img src="logo.jpg" width="60%" ></a></li>
+       <li id="navbar-logo"><a   href="index.html">CareerWiz</a></li>
+     </ul>
+     <div onmouseout="hideDropdown()" class="display:block" onmouseover="showDropdown()">
+     <ul id="courses-dropdown">
+      <li><a href="engg-courses.html">Engineering</a></li>
+       <li><a href="mgmt-courses.html">Management</a></li>
+       <li><a href="med-courses.html">Medicine</a></li>
+     </ul>
+     </div>
+   </nav>
+   </header>
+<article>
+  <h1>Engineering Courses</h1>
+   <video src="engineer.mp4" controls>
+
+   </video>
+   <h2>B.Tech-Programmes:</h2>
+   <p>B.Tech is the most preferring course by the students. B.Tech is for studing Engineering. There are many engineering courses based
+     upon the interest of the students. Some of them are:
+   </p>
+
+   <dl>
+     <dt>Computer Science Engineering(CSE)</dt>
+     <dd>Database System , Intelligent System , Networking and Security , Software Engineering.</dd>
+     <dt>Electrical and Communication Engineering(ECE)</dt>
+     <dd>Communication Systems , Digital Signal Processing , Wireless Communication Systems , Embedded Systems , VLSI Design , Robotics and Automation.</dd>
+     <dt>Electrical and Electronics Engineering(EEE)</dt>
+     <dd>Power System , Control and Instrumentation , Power Electronics and Drives , Robotics and Automation.</dd>
+     <dt>Mechanical Engineering(ME)</dt>
+     <dd>Thermal Engineering , Design , Industrial Engineering , Manufacturing Engineering , CAD or CAM &amp; Mechatronics.</dd>
+     <dt>Civil Engineering(CE)</dt>
+     <dd>Structural Engineering , Transportational Engineering , Environmental Engineering.</dd>
+     <dt>Information Technology(IT)</dt>
+     <dd>Database System , Intelligent System , Networking and Security , Software Engineering.</dd>
+     <dt>Biotechnology(BT)</dt>
+     <dd>Biochemical and Bioprocessing Engineering , Bioinformatics and Computational Biology , Pharmaceutical Engineering.</dd>
+   </dl>
+   <p>Along with these some universities offer minor subjects to the students to gain inter-disciplinary knowledge, provide an opportunity to students to become entrepreneurs and leaders.</p>
+
+</article>
+<article class="side">
+  <h2>Featured Article:</h2>
+  <img src="advice.jpg" class="center-fit" alt="image depicting confusion in choosing career">
+  <p><a href="http://www.idreamcareer.com/blog/importance-of-aptitude-test">Importance of Aptitude Test</a><br>
+    It is one of those decisions that sticks with us throughout our lives and has a really huge impact on our outlook towards life itself. It helps in shaping up the life that we want to create. Considering the heavy weightage attached to this...
+  </p>
+</article>
+<article class="side">
+  <h2>Featured Article:</h2>
+  <img src="college.jpg" class="center-fit" alt="image depicting confusion in choosing career">
+  <p><a href="http://www.idreamcareer.com/blog/how-to-select-colleges">How to Select College</a><br>
+    Choosing a right college means choosing a correct place to live in for next 3 years or more. For some, leaving home is not an option and for others going hundred or thousand miles is too difficult.   There are many factors to consider when evaluating...
+  </p>
+</article>
+<footer>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a class="no-border" href="about.html">About Us</a>
+    </ul>
+  </nav>
+  <p class="copyright">Copyright &copy; 2018 YASH KHANNA</p>
+</footer>
+ </body>
+</html>
