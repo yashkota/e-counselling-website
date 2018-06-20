@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login to your account</title>
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" type="text/css" href="forms.css">
+    <style>   
+      article {
+        margin-top: 6em !important;
+      }
+      footer {
+        margin-top: 200px;
+      }
+    </style>
+    <script>
+     function checkEmpty() {
+       var isOk = true;
+       var isMatched = true;
+       var defUserName = "yash";
+       var defPassword = "123#";
+       var usrname = document.getElementById('uname').value;
+       var paswd = document.getElementById('pwd').value;
+       if(usrname === ""||paswd === "") {
+         isOk = false;
+       }
+       if(usrname !== defUserName|| paswd !== defPassword) {
+         isMatched = false;
+       }
+       if(!isMatched) {
+         isOk = false;
+         document.getElementById('error-box').innerHTML = "Username or password do not match!";
+       }
+       if(isOk) {
+         window.open('index.html', '_self');
+       }
+       else {
+         var errbox = document.getElementById('error-box');
+         errbox.style.display = 'block';
+         errbox.style.marginBottom = '-5em';
+       }
+     }
+     function showDropdown() {
+       document.getElementById('courses-dropdown').style.display='block';
+     }
+     function hideDropdown() {
+       document.getElementById('courses-dropdown').style.display='none';
+     }
+    </script>
+  </head>
+  <body>
+    <header>
+    <nav id="navbar">
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="courses.html" onmouseover="showDropdown()">Courses</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a class="navbar-active" href="loginform.html">Login</a></li>
+        <li><a id="home-logo" href="index.html"><img src="logo.jpg" width="60%" ></a></li>
+        <li id="navbar-logo"><a   href="index.html">CareerWiz</a></li>
+      </ul>
+      <div onmouseout="hideDropdown()" style="display:block" onmouseover="showDropdown()">
+      <ul id="courses-dropdown">
+        <li><a href="engg-courses.html">Engineering</a></li>
+        <li><a href="mgmt-courses.html">Management</a></li>
+        <li><a href="med-courses.html">Medicine</a></li>
+      </ul>
+      </div>
+    </nav>
+    </header>
+  <div id="error-box">
+  </div>
+  <article class="form-container">
+    <h1>Login</h1>
+      <p><label for="uname">Username: </label><input id="uname" type="text" name="username" placeholder="Your username ..."></p>
+      <p><label for="pwd">Password: </label><input id="pwd" type="password" name="password" placeholder="Your password ..."></p>
+      <p class="button"><button type="button" onclick="checkEmpty();">Login</button></p>
+    </form>
+  </article>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a class="no-border" href="about.html">About Us</a>
+      </ul>
+    </nav>
+    <p class="copyright">Copyright &copy; 2018 YASH KHANNA</p>
+  </footer>
+</body>
+</html>
