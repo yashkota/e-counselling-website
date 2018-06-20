@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="global.css">
+  <link href="stylesheet" type="text/css" href="form.css">
+  <style media="screen">
+  article {
+    margin-top: 3em !important;
+  }
+  footer {
+    margin-top: 120px;
+  }
+  </style>
+  <script>
+  function checkEmpty() {
+    var isOk = true;
+    var email = document.getElementById('email').value;
+    var feedback = document.getElementById('feedback-txt').value;
+    if(email === ""||feedback === "") {
+      isOk = false;
+    }
+    if(isOk) {
+      window.open('contact-success.html', '_self');
+    }
+    else {
+      var errbox = document.getElementById('error-box');
+      errbox.style.display = 'block';
+      errbox.style.marginBottom = '-2em';
+    }
+  }
+  function showDropdown() {
+    document.getElementById('courses-dropdown').style.display='block';
+  }
+  function hideDropdown() {
+    document.getElementById('courses-dropdown').style.display='none';
+  }
+  </script>
+</head>
+<body>
+  <header>
+  <nav id="navbar">
+    <ul>
+      <li><a class="navbar-active" href="contact.html">Contact Us</a></li>
+      <li><a class="dropdown-hover" href="courses.html" onmouseover="showDropdown()">Courses</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="loginform.html">Login</a></li>
+      <li><a id="home-logo" href="index.html"><img src="logo.jpg" width="60%" ></a></li>
+      <li id="navbar-logo"><a   href="index.html">CareerWiz</a></li>
+    </ul>
+    <div onmouseout="hideDropdown()" style="display:block" onmouseover="showDropdown()">
+    <ul id="courses-dropdown">
+      <li><a href="engg-courses.html">Engineering</a></li>
+      <li><a href="mgmt-courses.html">Management</a></li>
+      <li><a href="med-courses.html">Medicine</a></li>
+    </ul>
+    </div>
+  </nav>
+  </header>
+  <div id="error-box">
+    <p>Some of the required fields are empty<p>
+  </div>
+  <article class="form-container">
+    <h1>Contact Us</h1>
+    <p>Wanna say hi? Use this form: </p>
+    <form action=" " method="get">
+      <p><label for="email">Your e-mail: </label><input id="email" type="email" name="email" placeholder="your email..."></p>
+      <p><label for="feedback-txt">Say something:</label></p><textarea id="feedback-txt" rows="5" maxlength="300" placeholder="Write your message here"></textarea>
+      <p class="button"><button type="button" onclick="checkEmpty()">Submit</button></p>
+    </form>
+  </article>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a class="no-border" href="about.html">About Us</a>
+      </ul>
+    </nav>
+    <p class="copyright">Copyright &copy; 2018 YASH KHANNA</p>
+  </footer>
+</body>
+</html>
