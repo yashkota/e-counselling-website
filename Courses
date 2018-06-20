@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Undergraduate Courses</title>
+  <link rel="stylesheet" type="text/css" href="global.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <script>
+  function showDropdown() {
+    document.getElementById('courses-dropdown').style.display='block';
+  }
+  function hideDropdown() {
+    document.getElementById('courses-dropdown').style.display='none';
+  }
+  </script>
+ </head>
+ <body>
+   <header>
+   <nav id="navbar">
+     <ul>
+       <li><a href="contact.html">Contact Us</a></li>
+       <li><a class="navbar-active" class="dropdown-hover" href="courses.html" onmouseover="showDropdown()">Courses</a></li>
+       <li><a href="signup.html">Sign Up</a></li>
+       <li><a href="loginform.html">Login</a></li>
+       <li><a id="home-logo" href="index.html"><img src="logo.jpg" width="60%" ></a></li>
+       <li id="navbar-logo"><a   href="index.html">CareerWiz</a></li>
+     </ul>
+     <div onmouseout="hideDropdown()" style="display:block" onmouseover="showDropdown()">
+     <ul id="courses-dropdown">
+       <li><a href="engg-courses.html">Engineering</a></li>
+       <li><a href="mgmt-courses.html">Management</a></li>
+       <li><a href="med-courses.html">Medicine</a></li>
+     </ul>
+     </div>
+   </nav>
+   </header>
+<article>
+  <h1>Undergraduate Courses</h1>
+  <p>
+  Educational system is a vast place where everyone gain knowledge and lay the foundation towards there future.In
+  present system there are many courses to explore and study.<br>After 10+2 everyone has a doubt
+   that "what was my ambition" and "which universiy is the best that gives the knowledge and guide me towards success". </p>
+   <h2>AFTER 10+2:</h2>
+   <p>After our school study we had many ways to choose and select our future.There are some stages like Post graduation,Graduation and some
+     higher standard studies depending upon the stream we choose.Normally in the present society many of the students prefer <strong>B.Tech</strong> as it has a great scope in future.
+     You can go to groups by completing the degree and groups are helpful to become governement officers like teacher,admistrative officer,collectors e.t.c.<br>
+   We have many more courses like Hotel management,Buiseness management,Air hostress,we can opt for naval communication and join Navy.
+   <img src="macbook.jpg" class="center-fit">
+    Checkout these links for more info about courses:
+   </p>
+   <ul>
+     <li><a href="engg-courses.html">Engineering Courses</a></li>
+     <li><a href="mgmt-courses.html">Managemenet Courses</a></li>
+     <li><a href="med-courses.html">Medical Courses</a></li>
+   </ul>
+</article>
+<article class="side">
+  <h2>Featured Article:</h2>
+  <img src="schools.jpg" class="center-fit" alt="image depicting confusion in choosing career">
+  <p><a href="http://www.idreamcareer.com/blog/school-vs-coaching-institutes-India">Schools Vs Coaching Institutes in India</a><br>
+  A recent order by hon Supreme Court of India stated that entrance to medical and engineering colleges in India should not be taken just on an entrance exam score and weightage should be given to the school exam marks as well...</p>
+</article>
+<article class="side">
+  <h2>Featured Article:</h2>
+  <img src="aptitude.png" class="center-fit" alt="image depicting confusion in choosing career">
+  <p><a href="http://www.idreamcareer.com/blog/importance-of-aptitude-test">Importance of Aptitude Test</a><br>
+    It is one of those decisions that sticks with us throughout our lives and has a really huge impact on our outlook towards life itself. It helps in shaping up the life that we want to create. Considering the heavy weightage attached to this...
+  </p>
+</article>
+<footer>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a class="no-border" href="about.html">About Us</a>
+    </ul>
+  </nav>
+  <p class="copyright">Copyright &copy; 2018 YASH KHANNA</p>
+</footer>
+ </body>
+</html>
